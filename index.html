@@ -1,0 +1,64 @@
+<head>
+    <style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: 3fr 5fr 1fr;
+        grid-template-rows: 1fr 9fr 9fr 1fr;
+        grid-template-areas:
+            "topbar topbar topbar"
+            "projects about socials"
+            "picture0 picture1 picture1"
+            "footer footer footer";
+        gap: 0.7%;
+        background-color: hsl(222,10,10%);
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .grid-item {
+        border: 1px solid hsl(0, 0%, 100%);
+        text-align: center;
+        padding: 0.5em
+    }
+
+    #header {grid-area: topbar;}
+    #projects {grid-area: projects;}
+    #about {grid-area: about;}
+    #socials {grid-area: socials;}
+    #piczero {grid-area: picture0;}
+    #picone {grid-area: picture1;}
+    #footer {grid-area: footer;}
+
+    body {
+        background-color: hsl(222, 16%, 28%);
+        font-family: verdana, sans-serif;
+        color: white;
+    }
+   </style>
+    <title>
+        Tired6488's Website
+    </title>
+</head>
+<body>
+    <div class="grid-container">
+        <div id="header" class="grid-item">The Website of Tired 6488</div>
+        <div id="projects" class="grid-item">PROJECTS <br>I have contributed like 2 lines of code to <a href="https://vuetube.app" style="color: white;">VueTube</a><br>
+        I made this website</div>
+        <div id="about" class="grid-item">ABOUT<br> 
+            <ul>
+                <li>I dislike cars</li>
+                <li>I like trains</li>
+                <li>I have no meaningful skills</li>
+                <li>I live in the United States of America</li>
+                <li>I dont know how to program <small>yet™</small></li>
+        </div>
+        <div id="socials" class="grid-item">SOCIALS<br>Tired#6488<br>tired6488:matrix.org<br>u/tired6488</div>
+        <div id="piczero" class="grid-item">Hi Bob!</div>
+        <div id="picone" class="grid-item"><img style="max-width: 100%; max-height: 100%; justify-content: center;"></img></div>
+        <div id="footer"><marquee style=" will-change: transform; transform: rotate(-2deg);"">
+            <small>I am a modern expert web developer</small>
+        </marquee></div>
+    </div> 
+</body>
+</html> 
